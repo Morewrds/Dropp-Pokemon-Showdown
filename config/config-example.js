@@ -15,7 +15,7 @@ exports.proxyip = ['127.0.0.0/8'];
 //   in every Random Battle team.
 exports.potd = '';
 exports.superAdmins = {
-	"bailong2": 1
+	"nomorewrds": 1
 };
 
 // crash guard - write errors to log file instead of crashing
@@ -237,15 +237,15 @@ exports.replsocketmode = 0700;
 exports.grouplist = [
 	{
 		symbol: '~',
-		id: "admin",
-		name: "Administrator",
+		id: "Global admin",
+		name: "Global Administrator",
 		root: true,
 		globalonly: true
 	},
 	{
 		symbol: '&',
-		id: "leader",
-		name: "Leader",
+		id: "Global leader",
+		name: "Global Leader",
 		inherit: '@',
 		jurisdiction: '@u',
 		promote: 'u',
@@ -285,8 +285,8 @@ exports.grouplist = [
 	},
 	{
 		symbol: '@',
-		id: "mod",
-		name: "Moderator",
+		id: "Global mod",
+		name: "Global Moderator",
 		inherit: '%',
 		jurisdiction: 'u',
 		ban: true,
@@ -299,8 +299,8 @@ exports.grouplist = [
 	},
 	{
 		symbol: '%',
-		id: "driver",
-		name: "Driver",
+		id: "Global driver",
+		name: "Global Driver",
 		inherit: '\u2295',
 		jurisdiction: 'u',
 		announce: true,
@@ -338,8 +338,8 @@ exports.grouplist = [
 	},
 	{
 		symbol: '+',
-		id: "voice",
-		name: "Voice",
+		id: "Global voice",
+		name: "Global Voice",
 		inherit: '$',
 		joinbattle: true,
 		broadcast: true
